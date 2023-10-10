@@ -1,7 +1,17 @@
 {
-  "name": "react-tailwind-ts-boilerplate",
-  "version": "0.0.0",
+  "name": "viewport-calculator",
+  "description": "React app to estimate device's pixel ratio and calculate the logical resolution(viewport)",
+  "version": "0.0.1",
+  "author": "Jhordy Gavinchu <dev@jhordyess>",
+  "license": "MIT",
   "private": true,
+  "keywords": [
+    "react",
+    "viewport",
+    "calculator",
+    "pixel ratio",
+    "logical resolution"
+  ],
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -10,7 +20,7 @@
     "preview": "vite preview",
     "format": "prettier --write .",
     "prepare": "husky install",
-    "predeploy": "npm run lint && npm run build",
+    "predeploy": "yarn lint && yarn build",
     "deploy": "gh-pages -d dist"
   },
   "dependencies": {

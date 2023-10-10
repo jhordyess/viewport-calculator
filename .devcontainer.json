@@ -1,0 +1,17 @@
+{
+  "name": "viewport-calculator",
+  "image": "jhordyess/node:18",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "bradlc.vscode-tailwindcss",
+        "esbenp.prettier-vscode",
+        "dbaeumer.vscode-eslint"
+      ],
+      "settings": {
+        "terminal.integrated.defaultProfile.linux": "zsh"
+      }
+    }
+  },
+  "postCreateCommand": "sudo npm -g i npm && yarn"
+}
