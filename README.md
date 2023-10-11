@@ -1,136 +1,97 @@
-# React Tailwind CSS and TypeScript Boilerplate
+# Viewport Calculator
 
-This is a simple boilerplate project for starting a web development project using React, Typescript, Tailwind CSS, Eslint, Prettier, Husky and Github Pages powered by Vite.
+Web app to estimate device's pixel ratio and calculate the logical resolution(viewport).
 
-## Features
+## Description
 
-- [React](https://react.dev/) as the UI library.
-- [TypeScript](https://www.typescriptlang.org/) as the programming language.
-- [Tailwind CSS](https://tailwindcss.com/) as the CSS framework.
-- [Vite](https://vitejs.dev/) as the build tool.
-- [Eslint](https://eslint.org/) as the linter.
-- [Prettier](https://prettier.io/) as the code formatter.
-- [Husky](https://typicode.github.io/husky/) as the Git hooks manager.
-- [GitHub Pages](https://pages.github.com/) as the hosting service.
+React app for calculating the logical resolution also known as viewport, based on the physical resolution and the pixel ratio of the device.
 
-## Getting Started
+### Technologies Used
+
+- JS Libraries: [ReactJS](https://reactjs.org/)
+- Programming Language: [TypeScript](https://www.typescriptlang.org/)
+- CSS Libraries: [TailwindCSS](https://tailwindcss.com/)
+- Build Tool: [Vite](https://vitejs.dev/)
+- Hosting: [GitHub Pages](https://pages.github.com/)
+- Dev Environment: [VSCode](https://code.visualstudio.com/) with [dev containers](https://code.visualstudio.com/docs/remote/containers) in [Zorin OS](https://zorinos.com/)
+
+### Demo
+
+You can see the demo here: <https://jhordyess.github.io/viewport-calculator/>
+
+### Screenshots
+
+## How to use
 
 1. Clone the repository:
 
-```sh
-git clone https://github.com/jhordyess/react-tailwind-ts-boilerplate.git
+```bash
+git clone git@github.com:jhordyess/viewport-calculator.git
 ```
 
-2. Navigate to the project folder:
+2. Open the project folder:
 
-```sh
-cd react-tailwind-ts-boilerplate
+```bash
+cd viewport-calculator
 ```
 
-3. Install dependencies:
+3. Install the dependencies:
 
-```sh
+```bash
 yarn
-
-# With npm
-npm install
 ```
 
-4. Start the development server:
+4. Run the project:
 
-```sh
+```bash
 yarn dev
-
-# With npm
-npm run dev
 ```
 
-5. Open your browser and visit [http://localhost:5173](http://localhost:5173) to see your project.
+5. Open the browser at <http://localhost:5173/viewport-calculator/>
 
-## Project Structure
+## How to use with VSCode dev containers
 
-```md
-react-tailwind-ts-boilerplate/
-├── .husky/ Husky configuration folder.
-│   ├── pre-push Git hook to run the linter before pushing.
-├── src/ Source code folder.
-│   ├── Home.tsx Home page component.
-│   ├── index.css Global CSS file.
-│   ├── main.tsx Main JavaScript file.
-│   ├── vite-env.d.ts Vite types file.
-├── .eslintrc.json Eslint configuration file.
-├── .gitignore Git ignore file.
-├── .prettierrc.json Prettier configuration file.
-├── index.html Entry point HTML file.
-├── package.json Project configuration and dependencies.
-├── postcss.config.js PostCSS configuration file.
-├── README.md Project README file.
-├── tailwind.config.js Tailwind CSS configuration file.
-├── tsconfig.json TypeScript configuration file.
-├── tsconfig.node.json TypeScript project references configuration file.
-├── vite.config.ts Vite configuration file.
+You can use the VSCode dev containers to run the project in a containerized environment.
+
+You need to have installed [Docker](https://www.docker.com/) and [VSCode](https://code.visualstudio.com/), and the [Dev Containers](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers) extension.
+
+1. Clone the repository:
+
+```bash
+git clone git@github.com:jhordyess/viewport-calculator.git
 ```
 
-## Commands
+2. Open the project with VSCode:
 
-### Start the development server
+```bash
+code viewport-calculator
+```
 
-```sh
+3. Open the command palette and select the option `Dev Containers: Reopen in Container`.
+
+4. Wait for the container to be built and the project to be started.
+
+5. Open the terminal in VSCode and run the project:
+
+```bash
 yarn dev
-
-# With npm
-npm run dev
 ```
 
-### Build the project for production
+6. Open the browser at <http://localhost:5173/viewport-calculator/>
 
-```sh
-yarn build
+## To-Do
 
-# With npm
-npm run build
-```
+- [ ] Add screenshot
+- [ ] Improve the UI
 
-### Preview the project before production
+## Contribution
 
-```sh
-yarn preview
+If you would like to contribute to the project, open an issue or make a pull request on the repository.
 
-# With npm
-npm run preview
-```
+## License
 
-### Lint the project
-
-```sh
-yarn lint
-
-# With npm
-npm run lint
-```
-
-### Format the project
-
-```sh
-yarn format
-
-# With npm
-npm run format
-```
-
-### Deploy the project to GitHub Pages
-
-```sh
-yarn deploy
-
-# With npm
-npm run deploy
-```
-
-## Contributing
-
-Contributions are welcome! If you find any issues or want to enhance the project, feel free to submit a pull request.
+© 2023> [Jhordyess](https://github.com/jhordyess). Under the [MIT](https://choosealicense.com/licenses/mit/) license. See the [LICENSE](./LICENSE) file for more details.
 
 ---
 
-Happy coding!
+Made with 💪 by [Jhordyess](https://www.jhordyess.com/)
