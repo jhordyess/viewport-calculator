@@ -16,14 +16,14 @@ const Calculator = () => {
 
   return (
     <>
-      <section className="w-full">
+      <section className="w-full text-left">
         <form onSubmit={handleCalculate}>
-          <div>
-            <label htmlFor="device-width" className="block text-lg font-bold">
+          <div className="">
+            <label htmlFor="device-width" className="text-sm font-semibold">
               Device width
             </label>
             <input
-              className="mt-2 w-full rounded-md border border-gray-300 px-4 py-2 text-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+              className="mt-2 w-full rounded-md border border-gray-300 px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
               type="number"
               id="device-width"
               placeholder="Enter device width"
@@ -33,11 +33,11 @@ const Calculator = () => {
           </div>
 
           <div className="mt-4">
-            <label htmlFor="device-height" className="block text-lg font-bold">
+            <label htmlFor="device-height" className="text-sm font-semibold">
               Device height
             </label>
             <input
-              className="mt-2 w-full rounded-md border border-gray-300 px-4 py-2 text-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+              className="mt-2 w-full rounded-md border border-gray-300 px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
               type="number"
               id="device-height"
               placeholder="Enter device height"
@@ -47,11 +47,11 @@ const Calculator = () => {
           </div>
 
           <div className="mt-4">
-            <label htmlFor="device-ppi" className="block text-lg font-bold">
+            <label htmlFor="device-ppi" className="text-sm font-semibold">
               Device PPI
             </label>
             <input
-              className="mt-2 w-full rounded-md border border-gray-300 px-4 py-2 text-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+              className="mt-2 w-full rounded-md border border-gray-300 px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
               type="number"
               id="device-ppi"
               placeholder="Enter device PPI"
@@ -71,28 +71,20 @@ const Calculator = () => {
         </form>
       </section>
 
-      <section>
-        <div className="mt-8">
-          <span className="block text-lg font-bold">Viewport width</span>
-          <output className="mt-2 w-full rounded-md border border-gray-300 px-4 py-2 text-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
-            {viewportWidth}px
-          </output>
-        </div>
+      {viewportWidth && viewportHeight && pixelRatio && (
+        <section className="pt-8">
+          <dl>
+            <dt className="font-semibold">Viewport width</dt>
+            <dd className="mt-2 text-gray-600">{viewportWidth}px</dd>
 
-        <div className="mt-4">
-          <span className="block text-lg font-bold">Viewport height</span>
-          <output className="mt-2 w-full rounded-md border border-gray-300 px-4 py-2 text-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
-            {viewportHeight}px
-          </output>
-        </div>
+            <dt className="mt-4 font-semibold">Viewport height</dt>
+            <dd className="mt-2 text-gray-600">{viewportHeight}px</dd>
 
-        <div className="mt-4">
-          <span className="block text-lg font-bold">Pixel ratio</span>
-          <output className="mt-2 w-full rounded-md border border-gray-300 px-4 py-2 text-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
-            {pixelRatio}
-          </output>
-        </div>
-      </section>
+            <dt className="mt-4 font-semibold">Pixel ratio</dt>
+            <dd className="mt-2 text-gray-600">{pixelRatio}</dd>
+          </dl>
+        </section>
+      )}
     </>
   )
 }

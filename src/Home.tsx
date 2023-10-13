@@ -2,30 +2,33 @@ import Calculator from './components/Calculator'
 
 const Home = () => {
   return (
-    <div className="flex min-h-screen flex-col items-center justify-center p-4">
-      <header className="flex flex-col items-center justify-center">
-        <h1 className="text-2xl font-bold">Viewport Calculator</h1>
-        <h2 className="text-center text-lg font-bold">
-          Estimate device's pixel ratio and calculate the viewport.
-        </h2>
-      </header>
-      <main className="flex flex-1 flex-col items-center justify-center text-center">
-        <Calculator />
+    <div className="w-full bg-gray-100 py-8">
+      <section className="mx-auto max-w-[24rem] rounded-lg border bg-white p-8 shadow-md">
+        <header className="flex flex-col items-center justify-center gap-y-4 pb-10">
+          <h1 className="text-2xl font-bold">Viewport Calculator</h1>
+          <h2 className="text-center text-base">
+            Estimate device's pixel ratio and calculate the viewport.
+          </h2>
+        </header>
+        <main className="flex flex-1 flex-col items-center justify-center text-center">
+          <Calculator />
 
-        <hr className="my-8 w-full" />
+          <hr className="my-8 w-full" />
 
-        <span>
-          Data used for the regression calculation from&nbsp;{' '}
-          <a
-            href="https://yesviz.com/mobiles.php"
-            target="_blank"
-            rel="noreferrer"
-            className="text-blue-500 hover:underline"
-          >
-            Yesviz
-          </a>
-        </span>
-      </main>
+          <span>
+            Credits for the data:&nbsp;
+            <a
+              href="https://yesviz.com/mobiles.php"
+              target="_blank"
+              rel="noreferrer"
+              className="text-blue-500 hover:underline"
+            >
+              Yesviz
+            </a>
+          </span>
+        </main>
+      </section>
+
       <footer className="w-full pt-6 text-center">
         Made with 💪 by&nbsp;
         <a
