@@ -19,7 +19,9 @@ React app for calculating the logical resolution also known as viewport, based o
 
 You can see the demo here: <https://jhordyess.github.io/viewport-calculator/>
 
-### Screenshots
+### Screenshot
+
+![Home](https://res.cloudinary.com/jhordyess/image/upload/v1697240631/viewport-calculator/home.png)
 
 ## How to use
 
@@ -82,7 +84,7 @@ yarn dev
 ## To-Do
 
 - [ ] Add screenshot
-- [ ] Improve the UI
+- [x] Improve the UI
 
 ## Contribution
 
