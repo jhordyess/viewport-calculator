@@ -2,7 +2,7 @@ import Calculator from './components/Calculator'
 
 const Home = () => {
   return (
-    <div className="w-full bg-gray-100 py-8">
+    <div className="flex min-h-screen w-full flex-col items-center justify-center bg-gray-100 py-8">
       <section className="mx-auto max-w-[24rem] rounded-lg border bg-white p-8 shadow-md">
         <header className="flex flex-col items-center justify-center gap-y-4 pb-10">
           <h1 className="text-2xl font-bold">Viewport Calculator</h1>
