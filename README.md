@@ -81,11 +81,6 @@ yarn dev
 
 6. Open the browser at <http://localhost:5173/viewport-calculator/>
 
-## To-Do
-
-- [ ] Add screenshot
-- [x] Improve the UI
-
 ## Contribution
 
 If you would like to contribute to the project, open an issue or make a pull request on the repository.
